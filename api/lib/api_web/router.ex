@@ -9,6 +9,6 @@ defmodule ApiWeb.Router do
   scope "/api/v1", ApiWeb do
     pipe_through :api
 
-    resources("/users", UserController, only: [:create, :show])
+    resources("/users", UserController, only: [:create])
   end
 end
